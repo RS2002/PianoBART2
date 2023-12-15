@@ -1,0 +1,4 @@
+__pycache__
+# Later we will share the model in another way
+*.ckpt
+.idea
