@@ -25,7 +25,6 @@ def get_args_finetune():
     parser.add_argument('--dataset', type=str,  required=True)
     parser.add_argument('--dataroot', type=str,  required=True)
     parser.add_argument('--dict_file', type=str, default='./Data/Octuple.pkl')
-    parser.add_argument('--name', type=str, default='pianobart')
     parser.add_argument('--ckpt', default='./pianobart.ckpt')
 
     parser.add_argument('--num_workers', type=int, default=5)
@@ -314,3 +313,6 @@ def main():
             if bad_cnt > 3:
                 print('valid acc not improving for 3 epochs')
                 break
+
+if __name__ == '__main__':
+    main()
